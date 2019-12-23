@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y \
     && apt-get install -y nginx \
     php-fpm \
-    php-pgsql \
+    php-mysql \
     php-xdebug \
     curl \
     php-curl \
