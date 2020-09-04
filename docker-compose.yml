@@ -8,7 +8,7 @@ services:
     volumes:
       - ./siteroot:/siteroot
   moodle-db:
-    image: mysql:5.5
+    image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: moodle
@@ -18,7 +18,7 @@ services:
     volumes: 
       - 'moodledb:/var/lib/mysql'
   moodle-test-db:
-    image: mysql:5.5
+    image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: moodle
